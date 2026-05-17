@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom de famille :"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edit_nom_famille"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez le nom" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prénom :"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/edit_prenom_apprenant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez le prénom" />
+
+    <Button
+        android:id="@+id/btn_enregistrer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Enregistrer" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Référence Apprenant (ID) :"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edit_recherche_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="ID pour recherche/suppression" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btn_trouver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trouver"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btn_retirer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retirer" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_affichage_resultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
